@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <h1>ciao</h1>
-    <i class="fa fa-solid fa-home"></i>
-  </div>
+  <SidebarComponent />
 </template>
 
 <script>
+import SidebarComponent from './components/SidebarComponent.vue';
   export default {
-    
+    name: 'App',
+    components: {
+      SidebarComponent
+    }
   }
 </script>
 
