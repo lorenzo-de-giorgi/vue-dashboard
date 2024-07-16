@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar">
         <h3 class="text-white"><strong>- Dashbool -</strong></h3>
-        <div class="d-flex">
+        <div class="d-flex mt-4">
             <div class="img">
                 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" class="ldg-img">
             </div>
@@ -10,11 +10,15 @@
                 <p id="ldg-name-sidebar"><strong>Mario Rossi</strong></p>
             </div>
         </div>
-        <ul class="sidebar-menu">
-            <li class="sidebar-item" v-for="item in menuItems" :key="item.id">
-                <a :href="item.link">{{ item.name }}</a>
-            </li>
-        </ul>
+        <div class="sidebar-list mt-4">
+            <h6 class="text-uppercase text-white">General</h6>
+            <br class="ldg-sidebar-br">
+            <ul class="sidebar-menu">
+                <li class="sidebar-item" v-for="item in menuItems" :key="item.id">
+                    <a :href="item.link">{{ item.name }}</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -71,5 +75,14 @@
 
 #ldg-name-sidebar{
     margin-top: -15px;
+}
+
+.ldg-sidebar-br{
+    display: block; // Ensures the br tag behaves like a block element
+    content: "";    // Necessary for adding content, but often redundant for <br>
+    height: 1px;    // Height of the line
+    width: 100%;    // Width of the line, can be adjusted
+    background-color: white; // Color of the line, white in this case
+    margin: 10px 0; // Optional, adds space around the line
 }
 </style>
