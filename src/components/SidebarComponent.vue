@@ -1,6 +1,15 @@
 <template>
     <div class="sidebar">
-        <h3>Dashbool</h3>
+        <h3 class="text-white"><strong>- Dashbool -</strong></h3>
+        <div class="d-flex">
+            <div class="img">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" class="ldg-img">
+            </div>
+            <div class="ms-4 text-white">
+                <p>Welcome</p>
+                <p id="ldg-name-sidebar"><strong>Mario Rossi</strong></p>
+            </div>
+        </div>
         <ul class="sidebar-menu">
             <li class="sidebar-item" v-for="item in menuItems" :key="item.id">
                 <a :href="item.link">{{ item.name }}</a>
@@ -52,5 +61,15 @@
       }
     }
   }
+}
+
+.ldg-img{
+    width: 55px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+}
+
+#ldg-name-sidebar{
+    margin-top: -15px;
 }
 </style>
