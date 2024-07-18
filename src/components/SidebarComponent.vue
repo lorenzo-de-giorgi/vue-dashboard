@@ -40,7 +40,7 @@
 
 <style lang="scss" scoped>
 .sidebar {
-  width: 250px;
+  width: 13%;
   height: 100vh;
   background-color: #2c3e50;
   padding: 20px;
