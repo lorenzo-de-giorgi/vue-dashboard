@@ -1,13 +1,18 @@
 <template>
-  <SidebarComponent />
+  <div class="d-flex">
+    <SidebarComponent />
+    <NavbarComponent />
+  </div>
 </template>
 
 <script>
 import SidebarComponent from './components/SidebarComponent.vue';
+import NavbarComponent from './components/NavbarComponent.vue';
   export default {
     name: 'App',
     components: {
-      SidebarComponent
+      SidebarComponent,
+      NavbarComponent
     }
   }
 </script>
